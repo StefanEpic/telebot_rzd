@@ -1,0 +1,488 @@
+[[package]]
+name = "aiofiles"
+version = "23.1.0"
+description = "File support for asyncio."
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[[package]]
+name = "aiogram"
+version = "3.1.1"
+description = "Modern and fully asynchronous framework for Telegram Bot API"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+aiofiles = ">=23.1.0,<23.2.0"
+aiohttp = ">=3.8.5,<3.9.0"
+certifi = ">=2023.7.22"
+magic-filter = ">=1.0.11,<1.1.0"
+pydantic = ">=2.1.1,<2.4"
+typing-extensions = ">=4.7.1,<4.8.0"
+
+[package.extras]
+cli = ["aiogram-cli (>=1.0,<2.0)"]
+dev = ["black (>=23.7.0,<23.8.0)", "isort (>=5.11,<6.0)", "mypy (>=1.4.1,<1.5.0)", "packaging (>=23.0,<24.0)", "pre-commit (>=3.3.3,<3.4.0)", "ruff (>=0.0.280,<0.1.0)", "toml (>=0.10.2,<0.11.0)", "towncrier (>=23.6.0,<23.7.0)"]
+docs = ["furo (>=2023.7.26,<2023.8.0)", "markdown-include (>=0.8.1,<0.9.0)", "pygments (>=2.15.1,<2.16.0)", "pymdown-extensions (>=10.1,<11.0)", "sphinx-autobuild (>=2021.3.14,<2021.4.0)", "sphinx-copybutton (>=0.5.2,<0.6.0)", "sphinx-intl (>=2.0.1,<2.1.0)", "sphinx-substitution-extensions (>=2022.2.16,<2022.3.0)", "sphinxcontrib-towncrier (>=0.3.2a0,<0.4.0)", "sphinx (>=7.1.1,<7.2.0)", "towncrier (>=23.6.0,<23.7.0)"]
+fast = ["uvloop (>=0.17.0)"]
+i18n = ["babel (>=2.12.1,<2.13.0)"]
+proxy = ["aiohttp-socks (>=0.8.0,<0.9.0)"]
+redis = ["redis (>=4.6.0,<4.7.0)"]
+test = ["aresponses (>=2.1.6,<2.2.0)", "pycryptodomex (>=3.18,<4.0)", "pytest-aiohttp (>=1.0.4,<1.1.0)", "pytest-asyncio (>=0.21.0,<0.22.0)", "pytest-cov (>=4.0.0,<4.1.0)", "pytest-html (>=3.2.0,<3.3.0)", "pytest-lazy-fixture (>=0.6.3,<0.7.0)", "pytest-mock (>=3.10.0,<3.11.0)", "pytest-mypy (>=0.10.0,<0.11.0)", "pytest (>=7.4.0,<7.5.0)", "pytz (>=2022.7.1,<2022.8.0)"]
+
+[[package]]
+name = "aiohttp"
+version = "3.8.5"
+description = "Async http client/server framework (asyncio)"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+aiosignal = ">=1.1.2"
+async-timeout = ">=4.0.0a3,<5.0"
+attrs = ">=17.3.0"
+charset-normalizer = ">=2.0,<4.0"
+frozenlist = ">=1.1.1"
+multidict = ">=4.5,<7.0"
+yarl = ">=1.0,<2.0"
+
+[package.extras]
+speedups = ["aiodns", "brotli", "cchardet"]
+
+[[package]]
+name = "aiosignal"
+version = "1.3.1"
+description = "aiosignal: a list of registered asynchronous callbacks"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+frozenlist = ">=1.1.0"
+
+[[package]]
+name = "annotated-types"
+version = "0.5.0"
+description = "Reusable constraint types to use with typing.Annotated"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "asgiref"
+version = "3.7.2"
+description = "ASGI specs, helper code, and adapters"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+typing-extensions = {version = ">=4", markers = "python_version < \"3.11\""}
+
+[package.extras]
+tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
+
+[[package]]
+name = "astroid"
+version = "2.15.8"
+description = "An abstract syntax tree for Python with inference support."
+category = "dev"
+optional = false
+python-versions = ">=3.7.2"
+
+[package.dependencies]
+lazy-object-proxy = ">=1.4.0"
+typing-extensions = {version = ">=4.0.0", markers = "python_version < \"3.11\""}
+wrapt = [
+    {version = ">=1.11,<2", markers = "python_version < \"3.11\""},
+    {version = ">=1.14,<2", markers = "python_version >= \"3.11\""},
+]
+
+[[package]]
+name = "async-timeout"
+version = "4.0.3"
+description = "Timeout context manager for asyncio programs"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "attrs"
+version = "23.1.0"
+description = "Classes Without Boilerplate"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+cov = ["attrs", "coverage[toml] (>=5.3)"]
+dev = ["attrs", "pre-commit"]
+docs = ["furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-towncrier", "towncrier", "zope-interface"]
+tests = ["attrs", "zope-interface"]
+tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pytest-mypy-plugins", "pytest-xdist", "pytest (>=4.3.0)"]
+
+[[package]]
+name = "certifi"
+version = "2023.7.22"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "charset-normalizer"
+version = "3.2.0"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.7.0"
+
+[[package]]
+name = "django"
+version = "4.2.5"
+description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+asgiref = ">=3.6.0,<4"
+sqlparse = ">=0.3.1"
+tzdata = {version = "*", markers = "sys_platform == \"win32\""}
+
+[package.extras]
+argon2 = ["argon2-cffi (>=19.1.0)"]
+bcrypt = ["bcrypt"]
+
+[[package]]
+name = "django-cleanup"
+version = "8.0.0"
+description = "Deletes old files."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "djangorestframework"
+version = "3.14.0"
+description = "Web APIs for Django, made easy."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+django = ">=3.0"
+pytz = "*"
+
+[[package]]
+name = "flake8"
+version = "6.1.0"
+description = "the modular source code checker: pep8 pyflakes and co"
+category = "dev"
+optional = false
+python-versions = ">=3.8.1"
+
+[package.dependencies]
+mccabe = ">=0.7.0,<0.8.0"
+pycodestyle = ">=2.11.0,<2.12.0"
+pyflakes = ">=3.1.0,<3.2.0"
+
+[[package]]
+name = "flake8-bugbear"
+version = "23.9.16"
+description = "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle."
+category = "dev"
+optional = false
+python-versions = ">=3.8.1"
+
+[package.dependencies]
+attrs = ">=19.2.0"
+flake8 = ">=6.0.0"
+
+[package.extras]
+dev = ["tox", "coverage", "hypothesis", "hypothesmith (>=0.2)", "pre-commit", "pytest"]
+
+[[package]]
+name = "flake8-coding"
+version = "1.3.2"
+description = "Adds coding magic comment checks to flake8"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+flake8 = "*"
+
+[[package]]
+name = "flake8-django"
+version = "1.4"
+description = "Plugin to catch bad style specific to Django Projects."
+category = "dev"
+optional = false
+python-versions = ">=3.7.2,<4.0.0"
+
+[package.dependencies]
+astroid = ">=2.15.2,<3.0.0"
+flake8 = ">=3.8.4,<7"
+
+[[package]]
+name = "frozenlist"
+version = "1.4.0"
+description = "A list-like structure which implements collections.abc.MutableSequence"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "idna"
+version = "3.4"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "lazy-object-proxy"
+version = "1.9.0"
+description = "A fast and thorough lazy object proxy."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "magic-filter"
+version = "1.0.11"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+dev = ["black (>=22.8.0,<22.9.0)", "flake8 (>=5.0.4,<5.1.0)", "isort (>=5.10.1,<5.11.0)", "mypy (>=0.971,<1.0)", "pre-commit (>=2.20.0,<2.21.0)", "pytest-cov (>=3.0.0,<3.1.0)", "pytest-html (>=3.1.1,<3.2.0)", "pytest (>=7.1.3,<7.2.0)", "types-setuptools (>=65.3.0,<65.4.0)"]
+
+[[package]]
+name = "mccabe"
+version = "0.7.0"
+description = "McCabe checker, plugin for flake8"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "multidict"
+version = "6.0.4"
+description = "multidict implementation"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "naming"
+version = "0.7.0"
+description = "Object-oriented names for the digital era."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["sphinx-autodoc-typehints", "sphinx-rtd-theme", "sphinx-toggleprompt", "sphinx-copybutton"]
+
+[[package]]
+name = "pycodestyle"
+version = "2.11.0"
+description = "Python style guide checker"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "pydantic"
+version = "2.3.0"
+description = "Data validation using Python type hints"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+annotated-types = ">=0.4.0"
+pydantic-core = "2.6.3"
+typing-extensions = ">=4.6.1"
+
+[package.extras]
+email = ["email-validator (>=2.0.0)"]
+
+[[package]]
+name = "pydantic-core"
+version = "2.6.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
+
+[[package]]
+name = "pyflakes"
+version = "3.1.0"
+description = "passive checker of Python programs"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
+name = "pytils"
+version = "0.4.1"
+description = "Russian-specific string utils"
+category = "main"
+optional = false
+python-versions = "^3.7"
+
+[[package]]
+name = "pytz"
+version = "2023.3.post1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<4"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<3"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "sqlparse"
+version = "0.4.4"
+description = "A non-validating SQL parser."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+dev = ["flake8", "build"]
+doc = ["sphinx"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
+name = "typing-extensions"
+version = "4.7.1"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "tzdata"
+version = "2023.3"
+description = "Provider of IANA time zone data"
+category = "main"
+optional = false
+python-versions = ">=2"
+
+[[package]]
+name = "urllib3"
+version = "2.0.5"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
+secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.1.0)", "urllib3-secure-extra"]
+socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
+zstd = ["zstandard (>=0.18.0)"]
+
+[[package]]
+name = "wrapt"
+version = "1.15.0"
+description = "Module for decorators, wrappers and monkey patching."
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+
+[[package]]
+name = "yarl"
+version = "1.9.2"
+description = "Yet another URL library"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+idna = ">=2.0"
+multidict = ">=4.0"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "ca727d9ae4c258be882c69071447496d0df45110192acfd6f8618d7629facc31"
+
+[metadata.files]
+aiofiles = []
+aiogram = []
+aiohttp = []
+aiosignal = []
+annotated-types = []
+asgiref = []
+astroid = []
+async-timeout = []
+attrs = []
+certifi = []
+charset-normalizer = []
+django = []
+django-cleanup = []
+djangorestframework = []
+flake8 = []
+flake8-bugbear = []
+flake8-coding = []
+flake8-django = []
+frozenlist = []
+idna = []
+lazy-object-proxy = []
+magic-filter = []
+mccabe = []
+multidict = []
+naming = []
+pycodestyle = []
+pydantic = []
+pydantic-core = []
+pyflakes = []
+python-dotenv = []
+pytils = []
+pytz = []
+requests = []
+sqlparse = []
+typing-extensions = []
+tzdata = []
+urllib3 = []
+wrapt = []
+yarl = []
