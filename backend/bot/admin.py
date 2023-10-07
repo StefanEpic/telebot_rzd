@@ -1,6 +1,17 @@
 from django.contrib import admin
-from .models import Instructions, Ksotp, KnowledgeTestSchedules, KnowledgeTestForms, MagazineDesignExamples, Sok, \
-    ApplicationForms, TechnicalStudies, Reminders, NormativeDocuments, FireSafety
+from .models import (
+    Instructions,
+    Ksotp,
+    KnowledgeTestSchedules,
+    KnowledgeTestForms,
+    MagazineDesignExamples,
+    Sok,
+    ApplicationForms,
+    TechnicalStudies,
+    Reminders,
+    NormativeDocuments,
+    FireSafety,
+)
 
 admin.site.register(Instructions)
 admin.site.register(Ksotp)

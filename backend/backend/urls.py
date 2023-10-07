@@ -17,10 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-admin.site.site_header = '🤖 Телеграм бот ОДМС-3'
-admin.site.index_title = '📌 @ODMS3_bot'
+admin.site.site_header = "🤖 Телеграм бот ОДМС-3"
+admin.site.index_title = "📌 @ODMS3_bot"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('bot.urls')),
+    path("admin/", admin.site.urls),
+    path("", include("bot.urls")),
 ]
