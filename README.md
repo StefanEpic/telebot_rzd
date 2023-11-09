@@ -1,5 +1,5 @@
 ## 🚂 Telebot + DRF API (AdminPanel)
-Bot for download images and API for upload
+Bot for download documents and API for upload
 
 ## 📂 Usage
 Using the bot, the user can receive a structured list of documents with pagination. Clicking on a document will prompt you to download document.
